@@ -88,7 +88,7 @@ func insertRun(cmd *cobra.Command, args []string) {
 		if err := c.Create(createCommand); err != nil {
 			fmt.Fprintln(os.Stderr, "Failed to create database:", err.Error())
 			fmt.Fprintln(os.Stderr, "Aborting.")
-			os.Exit(1)
+			//os.Exit(1)
 			return
 		}
 	}
