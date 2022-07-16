@@ -164,7 +164,7 @@ func init() {
 	insertCmd.Flags().StringVarP(&statsHost, "stats-host", "", "http://localhost:8086", "Address of InfluxDB instance where runtime statistics will be recorded")
 	insertCmd.Flags().StringVarP(&statsDB, "stats-db", "", "stress_stats", "Database that statistics will be written to")
 	insertCmd.Flags().BoolVarP(&recordStats, "stats", "", false, "Record runtime statistics")
-	insertCmd.Flags().StringVarP(&host, "host", "", "http://localhost:8086", "Address of InfluxDB instance")
+	insertCmd.Flags().StringVarP(&host, "host", "", "http://influxdb.monitoring.svc.cluster.local:9096", "Address of InfluxDB instance")
 	insertCmd.Flags().StringVarP(&username, "user", "", "", "User to write data as")
 	insertCmd.Flags().StringVarP(&password, "pass", "", "", "Password for user")
 	insertCmd.Flags().StringVarP(&db, "db", "", "stress", "Database that will be written to")
